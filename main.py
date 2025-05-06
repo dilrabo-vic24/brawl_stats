@@ -44,7 +44,7 @@
 """
 import sys
 
-from brawlers_data import brawlers_data
+# from brawlers_data import brawlers_data
 from scraping import BrawlStatsScraper
 from brawler_data_pandas import BrawlerDataPandas
 from excel_data_saver import ExcelDataSaver
@@ -75,7 +75,7 @@ def main():
         player_id = get_player_id()
 
         scraper = BrawlStatsScraper()
-        # brawlers_data = scraper.get_player_brawlers(player_id=player_id)
+        brawlers_data = scraper.get_player_brawlers(player_id=player_id)
 
         if not brawlers_data:
             print("\nError: Could not fetch brawler data. Please check the player ID and try again.")

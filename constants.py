@@ -1,7 +1,6 @@
 #base url
 BASE_URL = "https://brawlstats.com/profile"
 
-
 #html elements
 BRAWLER_CONTAINER = "brawler-container" 
 BRAWLER_NAME = "brawler-name" 
